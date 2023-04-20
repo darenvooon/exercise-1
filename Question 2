@@ -1,0 +1,11 @@
+#2: Create random multiple boxes in blender or omniverse create using python script
+import bpy
+
+# Set up initial variables
+size = 1.0
+spacing = 2.0
+
+# Create 3 boxes
+for i in range(3):
+    bpy.ops.mesh.primitive_cube_add(size=size, location=(i * spacing, 0, 0))
+    size += 1.0
